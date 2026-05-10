@@ -1,0 +1,23 @@
+{
+  "name": "Tictactrip Data Analysis",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11-bullseye",
+  "postCreateCommand": "pip install pandas numpy haversine scipy scikit-learn xgboost matplotlib seaborn folium networkx jupyter ipykernel nbformat pytest pytest-cov",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers"
+      ],
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python",
+        "jupyter.notebookFileRoot": "${workspaceFolder}",
+        "python.testing.pytestEnabled": true,
+        "python.testing.pytestArgs": ["tests"]
+      }
+    }
+  },
+  "forwardPorts": [8888],
+  "remoteUser": "vscode"
+}
